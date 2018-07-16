@@ -5,11 +5,11 @@ exclaim = it => it + "!";
 double = it => it + it;
 new_line = it => it + "\n";
 
-const x = pipeline(
+const result = pipeline(
   capitalize,
   exclaim,
   new_line,
   double
 )("hello world")
 
-console.log(x)
+console.log(result)
